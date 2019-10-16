@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifpi-picos/nodejs-api-Jardson-Costa.git"
+  },
+  "author": "Jardson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifpi-picos/nodejs-api-Jardson-Costa/issues"
+  },
+  "homepage": "https://github.com/ifpi-picos/nodejs-api-Jardson-Costa#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
