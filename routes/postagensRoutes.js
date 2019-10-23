@@ -1,13 +1,16 @@
 const express = require('express');
+const postagensController = require('../controllers/postagens');
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
     //buscar postagens no banco de dados
-    res.send('Lista de postagens...');
+    const postagens = await postagensController.get();
+    res.send(postagens);
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
     //enviar para o banco de dados
+    await postagensController.create(req.body);
     res.send('Adicionado com sucesso!')
 });
 

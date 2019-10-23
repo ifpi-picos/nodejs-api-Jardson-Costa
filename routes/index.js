@@ -1,11 +1,11 @@
 const express = require('express');
-const router = express.Router();
 const postagensRoutes = require('./postagensRoutes');
 
+const router = express.Router();
 router.get('/', (req, res) => {
     res.send('App Online :)');
 });
 
-postagensRoutes.use('./postagens', postagensRoutes);
+router.use('/postagens', postagensRoutes);
 
 module.exports = router;
